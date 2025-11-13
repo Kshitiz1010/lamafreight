@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lama Freight</title>
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Lama Freight - Freight Simplified, Freight, LTL" name="description" >
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" >
+    <link href="css/swiper-custom-1.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+        
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+         <header class="transparent scroll-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/Lama-Freight-Logo.png" alt="" >
+                                        <img class="logo-scroll" src="images/Lama-Freight-Logo.png" alt="" >
+                                        <img class="logo-mobile" src="images/Lama-Freight-Logo.png" alt="" >
+                                    </a>
+                                </div>
+                                <!-- logo end -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainemenu begin -->
+                               <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a>
+                                    </li>
+                                    <li><a class="menu-item" href="services.html">Services</a>
+                                    </li>
+                                    <li><a class="menu-item" href="#">Company</a>
+                                        <ul>
+                                            <li><a href="https://lamafreight.com/help/index.php/about-us/">About Us</a></li>
+                                            <li><a href="#">Our Team</a></li>
+                                        </ul>
+                                    </li>
+                                  
+                                    <li><a class="menu-item" href="#">Contact</a></li>
+                                </ul>
+                                <!-- mainmenu end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section id="subheader" class="text-light sm-mt-90 relative rounded-1 overflow-hidden m-3" data-bgimage="url(images/background/4.webp) center">
+                <div class="container relative z-2">
+                    <div class="row gy-4 gx-5 align-items-center">
+                        <div class="col-lg-12">
+                            <h1 class="split">Get a quote, quick!</h1>
+                            <ul class="crumb wow fadeInUp">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">Get a quote, quick!</li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+                <div class="gradient-edge-bottom color op-7 h-80"></div>
+                <div class="sw-overlay op-7"></div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-12">
+                            <form name="logisticsBookingForm" id="logistics_booking_form" class="position-relative z1000" method="post" action="booking.php">
+                                <div class="row g-4 gy-2">
+
+                                    <!-- Shipper Information -->
+                                    <div class="col-md-12">
+                                        <h3>Freight Information</h3>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <h5>From Zip?</h5>
+                                        <input type="text" name="from_Zip" id="from_Zip" class="form-control" placeholder="From Zip? (type to search)" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>To Zip?</h5>
+                                        <input type="text" name="to_Zip" id="to_Zip" class="form-control" placeholder="To Zip?" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>Pick up Date? (YYYY-MM-DD)</h5>
+                                        <input type="date" name="pickup_date" id="pickup_date" class="form-control" placeholder="Pick up date?" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h5>No. of Pallets</h5>
+                                        <input type="number" name="no_of_palletes" id="no_of_palletes" class="form-control" placeholder="No. of Pallets">
+                                    </div>
+                                     <div class="col-md-4">
+                                        <h5>Shipment Description</h5>
+                                        <select name="package_type" id="package_type" class="form-control" required>
+                                            <option value="Salvage Equipments">Salvage Equipments</option>
+                                            <option value="Used Telecom Equipments">Used Telecom Equipments</option>
+                                            <option value="Garments/Textile">Garments/Textile</option>
+                                            <option value="Loose Cargo">Loose Cargo</option>
+                                        </select>
+                                    </div>
+                                       <div class="col-md-4">
+                                        <h5>Lift Gate</h5>
+                                        <div class="d-flex flex-wrap gap-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="Pickup" name="special[]" value="Pickup">
+                                                <label class="form-check-label" for="Pickup">Pickup</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="Delivery" name="special[]" value="Delivery">
+                                                <label class="form-check-label" for="Delivery">Delivery</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                       <style>
+
+                                            .radio-button {
+                                                margin: 15px 0px 0 0;
+                                            }
+
+                                            .radio-button input[type="radio"] {
+                                                opacity: 0;
+                                                position: fixed;
+                                                width: 0;
+                                            }
+
+                                            .radio-button label {
+                                                display: inline-block;
+                                                background-color: #ddd;
+                                                padding: 0px 5px;
+                                                font-family: sans-serif, Arial;
+                                                font-size: 16px;
+                                                border: 2px solid rgba(0, 0, 0, 0.05);
+                                                border-radius: 4px;
+                                            }
+
+                                            .radio-button label:hover {
+                                                border: 2px solid #a02327;
+                                                cursor: pointer;
+                                            }
+
+                                            .radio-button input[type="radio"]:focus+label {
+                                                border: 2px solid #a02327;
+                                            }
+
+                                            .radio-button input[type="radio"]:checked+label {
+                                                background-color: #ffffff;
+                                                color: #a02327;
+                                                border-color: #a02327;
+                                            }
+                                    </style>
+                                    <div class="col-md-1">
+                                        <h5>Length</h5>
+                                        <input type="number" name="length" id="length" class="form-control" placeholder="Length" required>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <h5>Width</h5>
+                                        <input type="number" name="Width" id="Width" class="form-control" placeholder="Width" required>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <h5>Height</h5>
+                                        <input type="number" name="Height" id="Height" class="form-control" placeholder="Height" required>
+                                    </div>
+                                 
+                                    <div class="col-md-1 p-0">
+                                        <h5> &nbsp;</h5>
+                                        <div class="radio-button">
+                                            <input type="radio" name='ft' id="ft" value="ft">
+                                            <label for="ft"> FT </label>
+
+                                            <input type="radio" name='in' id="in" value="in">
+                                            <label for="in"> IN </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <h5>Weight</h5>
+                                        <input type="number" name="Weight" id="Weight" class="form-control" placeholder="Weight" required>
+                                    </div>
+                                 
+                                    <div class="col-md-1 p-0">
+                                        <h5> &nbsp;</h5>
+                                        <div class="radio-button">
+                                            <input type="radio" name='lb' id="lb" value="lb">
+                                            <label for="student1_type1"> LB </label>
+
+                                            <input type="radio" name='kg' id="kg" value="kg">
+                                            <label for="kg"> KG </label>
+                                        </div>
+                                    </div>
+                                    <div class="spacer-single"></div>
+
+
+                                    <!-- Submit -->
+                                    <div class="col-md-12 mt-4">
+                                        <button type="submit" class="btn-main">
+                                            Get Quote
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="success_message" class='success'>
+                                Your message has been sent successfully. Refresh this page if you want to send more messages.
+                            </div>
+                            <div id="error_message" class='error'>
+                                Sorry there was an error sending your form.
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+        
+        <!-- footer begin -->
+          <footer class="text-light section-dark">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-md-6">
+                        <img src="images/Lama-Freight-Logo.png" class="w-170px mb-2 logo" alt="logo">
+                        <div class="spacer-single"></div>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="widget">
+                                    <h5>Services</h5>
+                                    <ul>                                        
+                                        <li><a href="#">Less Than Truck Load</a></li>
+                                        <li><a href="#">Partial Truck Load</a></li>
+                                        <li><a href="#">Full Truck Load</a></li>
+                                        <li><a href="#">White Glove Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul>                                        
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="https://lamafreight.com/help/index.php/about-us/">About Us</a></li>
+                                        <li><a href="#">Our Team</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="social-icons mb-sm-30 text-center">
+                            <a href="https://www.facebook.com/profile.php?id=61581073893237#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/lama.freight?igsh=Ym15MWxtdWQ3eDk1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/lama-freight/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2>Get in Touch</h2>
+                            <img src="images/ui/up-right-arrow.webp" class="w-60px op-5" alt="">
+                        </div>
+
+                        <div class="widget">
+                            <div class="op-5 fs-15">Email</div>
+                            <h3><a href="mailto:contact@lamalogistics.com">Send email</a></h3>
+
+                            <div class="spacer-20"></div>      
+
+                            <div class="op-5 fs-15">Phone</div>
+                            <h3><a href="tel:+1(888) 315-7532">+47 333 78 901</a></h3>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="op-5 fs-15">Office Location</div>
+                            <h3>
+                                2161 Shattuck Ave, Ste 233 <br>
+                                Berkeley, CA 94704
+                            </h3>
+
+                            <div class="spacer-20"></div>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            Copyright 2025 Lama Freight
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/validation-booking.js"></script>
+
+</body>
+
+</html>

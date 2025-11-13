@@ -1,8 +1,8 @@
 ﻿/* ================================================== */
 
 
-/* LogiXPress
-/* created by designesia
+/* 
+/* lamafreight
 
 @charset "utf-8";
 
@@ -215,8 +215,9 @@ header.header-bg {
 }
 
 header.transparent {
-  background: none;
+  background: #ffffff;
 }
+
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
   background: rgba(255, 255, 255, 0.0);
@@ -782,7 +783,7 @@ header.smaller #mainmenu>li::before{
   padding-top: 25px;
   padding-bottom: 25px;
   text-decoration: none;
-  color: #ffffff;
+  color: #181D24;
   text-align: center;
   outline: none;
 }
